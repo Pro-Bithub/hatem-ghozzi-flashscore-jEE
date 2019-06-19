@@ -1,0 +1,25 @@
+creation base de donnée postgresql
+====================================
+name de base de donnée flashscore
+tableaux et le chomp
+favori
+( idfavori integer 'primary key'  
+    idmatch integer 'foreign key from match',
+    iduser integer
+)
+match
+( idmatch integer 'primary key' ,
+    statue text,
+    scoreequipeone integer,
+    scoreequipetwo integer,
+    nameequipeone text ,
+    nameequipetow text 
+   
+)
+users
+(   userid integer 'primary key' ,
+    name text ,
+    password text ,
+    type text default 'user' 
+   
+)
